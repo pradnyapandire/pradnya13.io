@@ -1,0 +1,150 @@
+<html>
+<head>
+<title>Happy Wedding</title>
+
+<body>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="wedding.css">
+<style>
+#menu {
+    width: 1360px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Tahoma,Geneva, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #FFFACD;
+     border-radious: 40px;
+}
+#menu li { 
+display: inline; 
+ 
+}
+#menu a {
+    text-decoration: none;
+    color: #00F;
+   
+}
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+</style>
+</head>
+
+
+
+<body>
+
+<div id="header"  style=";background-image:url(wed5.jpg);background-size:1360px 450px">  
+<font size="7" face="Georgia, Arial" color="Navy"><center>Happy Wedding</center></font><table></div>
+<div id="menu">
+<ul>
+<li style="padding-right:50;"><a href="index.html">Home</a></li>
+ <li style="padding-right:50;"><a href="aboutus.html">About Us</a></li>
+<li style="padding-right:50;"><a href="service.html">Services</a></li>
+<li style="padding-right:50"><a href="registration.html">Login</a></li> 
+   <li style="padding-right:50;"><a href="contactus.html">Contact Us</a></li>
+</ul>
+</div>
+<table>
+<script type="text/javascript" >
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "wed1.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "wed2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "wed4.jpg"
+
+</script>
+
+<img src="wed1.jpg" id="slide" width="1360" height="450" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</table>
+<hr>
+
+
+
+
+<table style="background-color:#F5B041">
+<tr>
+<td>
+
+<div class="img" style="background-color:#F5B041; margin-left: 200px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="wear.html" style="clear: left; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="wear.jpg" height="200" width="250"/></a>
+<p>WEARS</p>
+</div>
+</td>
+<td>
+<div class="img" style="background-color:##F5B041; margin-left: 20px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="food1.html" style="clear: left; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="restaurants.jpg" height="200" width="250"/></a>
+<p>FOOD</p>
+</div>
+</td>
+<td>
+<div class="img" style="background-color: #F5B041; margin-left: 20px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 700; padding-top: 8px;">
+
+<a href="photos.html" style="clear: left; float:centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="photo.jpg" height="200" width="250"/></a>
+<p>PHOTOGRAHY</p>
+</div>
+</td></tr>
+<tr>
+<td>
+<div class="img" style="background-color:#F5B041; margin-left: 200px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="food1.html" style="clear: centre; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="mehangi.jpg" height="200" width="250"/></a>
+<p>MEHANDI ARTIST</p>
+</div>
+</td>
+
+</tr>
+</table>
+<div id="footer">
+
+<table style="background-color:Black;color:white;width:100%;margin-right:700">
+<tr>
+
+
+<td>Contact:022-12345678</td>&nbsp
+<td>Email:wedding143@gmail.com</td>
+<td style="text-align:right">
+
+Copyright © 2014 Wedding Planner. All right reserved.
+<br>
+Based in Mumbai, India<br>
+Website is best viewed in Google Chrome, Mozilla 28, IE 8 and above versions. </td>
+</tr>
+</table>
+</div>
+
+
+</table>
+</body>
+</html>

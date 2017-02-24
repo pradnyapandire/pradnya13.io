@@ -1,0 +1,241 @@
+<html>
+<head>
+<title>Happy Wedding</title>
+
+<body>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="wedding.css">
+<style>
+#menu {
+    width: 1360px;
+    height: 35px;
+    font-size: 20px;
+    font-family: Tahoma,Geneva, sans-serif;
+    font-weight: bold;
+    text-align: left;
+    text-shadow: 3px 2px 3px #333333;
+    background-color: #FFFACD;
+     border-radious: 40px;
+}
+#menu li { 
+display: inline; 
+ 
+}
+#menu a {
+    text-decoration: none;
+    color: #00F;
+   
+}
+#menu a:hover {
+    color: #F90;
+    background-color: #FFF;
+}
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
+#sidebar
+{
+    float: right;
+    width: 250px;
+    height: 400px;
+    margin: 20px 10px;
+    padding: 10px;
+   
+}
+
+#content_area
+{
+    float: left;
+    width: 750px;
+    margin: 20px 0 20px 0;
+    padding: 10px;
+}
+</style>
+</head>
+
+
+
+<body>
+
+<div id="header"  style=";background-image:url(wed5.jpg);background-size:1360px 450px">  
+<font size="7" face="Georgia, Arial" color="Navy"><center>Happy Wedding</center></font><table></div>
+<div id="menu">
+<ul>
+<li style="padding-right:50;"><a href="index.html">Home</a></li>
+
+<div class="dropdown">
+  <li style="padding-right:50;"><a href="#">Services</a></li>
+  <div class="dropdown-content">
+    <a href="wear.html">Wears</a>
+    <a href="food1.html">Food</a>
+     <a href="photo.html">Photography</a>
+     <a href="mehandi.html">Mehandi Artist</a>
+    
+  </div>
+
+</div>
+   <li style="padding-right:50;"><a href="contact.html">Contact Us</a></li>
+</ul>
+</div>
+<table>
+<script type="text/javascript" >
+
+var slideimages = new Array() // create new array to preload images
+slideimages[0] = new Image() // create new instance of image object
+slideimages[0].src = "wed1.jpg" // set image object src property to an image's src, preloading that image in the process
+slideimages[1] = new Image()
+slideimages[1].src = "wed2.jpg"
+slideimages[2] = new Image()
+slideimages[2].src = "wed4.jpg"
+
+</script>
+
+<img src="wed1.jpg" id="slide" width="1360" height="450" />
+
+<script type="text/javascript">
+
+//variable that will increment through the images
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<2)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+</table>
+ <div id="content_area">
+              <table style="background-color:#F5B041">
+<tr>
+<td>
+
+<div class="img" style="background-color:#F5B041; margin-left: 200px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="wear.html" style="clear: left; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="wear.jpg" height="200" width="250"/></a>
+<p>WEARS</p>
+</div>
+</td>
+<td>
+<div class="img" style="background-color:##F5B041; margin-left: 20px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="food1.html" style="clear: left; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="restaurants.jpg" height="200" width="250"/></a>
+<p>FOOD</p>
+</div>
+</td>
+<td>
+<div class="img" style="background-color: #F5B041; margin-left: 20px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 700; padding-top: 8px;">
+
+<a href="photos.html" style="clear: left; float:centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="photo.jpg" height="200" width="250"/></a>
+<p>PHOTOGRAHY</p>
+</div>
+</td>
+</tr>
+<tr>
+<td>
+<div class="img" style="background-color:#F5B041; margin-left: 200px; margin-right: 0px; padding-bottom: 10px; padding-left: 10px; padding-right: 0px; padding-top: 8px;">
+
+<a href="mehandi.html" style="clear: centre; float: centre; margin-bottom: 1em; margin-right: 1em;"><img border="0"  src="mehangi.jpg" height="200" width="250"/></a>
+<p>MEHANDI ARTIST</p>
+</div>
+</td>
+
+</tr>
+</table>
+            </div>
+<div id="sidebar">
+			<fieldset style="width:20%"><legend>Get In Touch</legend>
+
+<form method="POST" action="signup.php">
+<table border="0">
+<tr>
+<td>  Name</td><td> <input type="text" name="fname"></td>
+</tr><tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>
+<tr>
+<td>  Phon No</td><td> <input type="text" name="phn"></td>
+</tr><tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>
+<tr>
+<td>Email</td><td> <input type="text" name="email"></td>
+</tr><tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>
+<tr>
+<td>Message</td><td> <input type="text" name="msg"></td>
+</tr><tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>
+<tr>
+<td><input id="button" type="submit" name="submit"></td>
+</tr><tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>  <tr><td></td></tr>
+</table>
+</form>
+
+</fieldset>
+                
+            </div>
+
+
+<div id="footer">
+
+<table style="background-color:Black;color:white;width:100%;margin-right:700">
+<tr>
+
+
+<td>Contact:022-12345678</td>&nbsp
+<td>Email:wedding143@gmail.com</td>
+<td style="text-align:right">
+
+Copyright © 2014 Wedding Planner. All right reserved.
+<br>
+Based in Mumbai, India<br>
+Website is best viewed in Google Chrome, Mozilla 28, IE 8 and above versions. </td>
+</tr>
+</table>
+</div>
+
+
+</table>
+</body>
+</html>
